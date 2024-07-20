@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Converter</h2>
+      <form >
+        <p>Enter Amount</p>
+        <input class="amount"   value="1" type="text"  />
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/PK/flat/64.png" alt="flag" />
+              <select name="from">
+                <option value="PKR">PK</option>
+              </select>
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="to">
+            <p>TO</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
+              <select name="to">
+                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1PK = 0.0036USD</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <!-- <p id="facts"></p>
+    <button id="btn">Click Me!</button> -->
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
